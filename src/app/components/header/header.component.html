@@ -1,3 +1,24 @@
-<p>
-  Шапка <span>({{ title | titlecase }})</span>
-</p>
+<section class="header">
+  <h1>Шапка</h1>
+
+  <div class="header__logo">
+    <img src="" alt="Логотип сайта" class="header__logo-image">
+
+    <p class="header__logo-title">
+      {{ title }} 
+
+      <span class="header__logo-subtitle">
+        {{ subtitle }}
+      </span>
+    </p>
+  </div>
+
+  <nav class="header__navigation">
+    <button class="header__button" mat-flat-button (click)="goToCartPage()">Корзина</button>
+
+    <button class="header__button" mat-flat-button (click)="goToFavoritesPage()">Избранное</button>
+
+    <button class="header__button" mat-flat-button (click)="goToProfile()">Профиль</button>
+  </nav>
+</section>
+

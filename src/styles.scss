@@ -1,5 +1,10 @@
 @use '@angular/material' as mat;
 
+@import "./assets/helpers/color";
+@import "./assets/helpers/mixins";
+@import "./assets/helpers/variables";
+@import "./assets/helpers/breakpoints";
+
 *,
 *::before,
 *::after {
@@ -19,8 +24,15 @@ $debug: false;
 }
 
 body {
-  background-color: whitesmoke;
+  background-color: var(--background-color);
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

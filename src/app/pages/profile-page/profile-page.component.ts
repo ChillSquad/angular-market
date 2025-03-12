@@ -5,12 +5,12 @@ import { Router } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
 
 @Component({
-  selector: 'app-cart-page',
+  selector: 'app-profile-page',
   imports: [CommonModule, MatButtonModule],
-  templateUrl: './cart-page.component.html',
-  styleUrl: './cart-page.component.scss'
+  templateUrl: './profile-page.component.html',
+  styleUrl: './profile-page.component.scss',
 })
-export class CartPageComponent {
+export class ProfilePageComponent {
   constructor(private router: Router) {}
 
   goToHomePage() {

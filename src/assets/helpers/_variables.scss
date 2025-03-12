@@ -1,13 +1,10 @@
 @import './breakpoints';
 
 :root {
+  --default-padding: 20px;
+  --container-padding: 120px;
+
   --card-gap: 20px;
 
-  --card-border-radius: 20px;
-
-  @media (max-width: 576px) {
-    --card-gap: 10px;
-
-    --card-border-radius: 10px;
-  }
+  --default-border-radius: 16px;
 }
